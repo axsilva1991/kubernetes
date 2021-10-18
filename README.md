@@ -56,6 +56,17 @@ kubectl apply -f .\primeiro-pod.yaml
 ````
 </details>
 
+#### Como deletar um pod:
+````
+kubectl delete pod pod-name
+````
+Após isso podemos usar o comando `getpods` para verificar se o pod ainda existe. 
+
+````
+kubectl get pods
+````
+
+  
 ## Replicasets
 ## Deployments
 ## Volume
