@@ -10,7 +10,10 @@
 * Caso os container's parem o pod é interrompido, caso o pod possua apenas um de de seus containers fora ele nao será recriado. 
 * Pods são efêmeros são feitos para serem re-criados a qualquer momento.
 * Pods compartilham os mesmos namespaces de rede e IPC e podem compartilhar volumes.
-### Como Criar um pod:
+
+#### Como Criar um pod:
+<details>
+<summary>passo-a-passo</summary>
 
 1 - Criando o pod
 ```
@@ -28,8 +31,13 @@ kubectl describe pod nginx-pod-name
 ```
 kubectl edit pod nginx-pod-name
 ```
-#### Criando Pod's de maneira declarativa:
+</details>
 
+#### Criando Pod's de maneira declarativa:
+<details>
+<summary>passo-a-passo</summary>  
+
+  
 1 - Crie o arquivo do pod .yaml
 ````
 apiVersion: v1
@@ -48,6 +56,8 @@ spec:
 ````
 kubectl apply -f .\primeiro-pod.yaml
 ````
+</details>
+
 ## Replicasets
 ## Deployments
 ## Volume
