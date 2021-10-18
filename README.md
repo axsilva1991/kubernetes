@@ -4,7 +4,33 @@
 * Reiniciar aplicações caso entrem em falha.
 * E executar em diferentes ambientes de cloud/sistemas operacionais, como exemplo (GCP, AWS, AZURE e etc).
 
-## Pod
+## POD
+* Trata-se de uma capsula que pode conter 1 ou mais container's.  
+* Cada Pod terá 1 endereço de IP, posso compartilhar o mesmo endereço de ip para varios containers dentro.
+* Caso os container's parem o pod é interrompido, caso o pod possua apenas um de de seus containers fora ele nao será recriado. 
+* Pods são efêmeros são feitos para serem re-criados a qualquer momento.
+* Pods compartilham os mesmos namespaces de rede e IPC e podem compartilhar volumes.
+### Como Criar um pod:
+
+1 - Criando o pod
+```
+kubectl run nginx-pod-name --image=nginx
+```
+2 - Verificando a criação do POD
+```
+kubectl get pods --watch
+```
+3 - Verificando detalhes sobre o pod
+```
+kubectl describe pod nginx-pod-name
+```
+4 - Editar um pod
+```
+kubectl edit pod nginx-pod-name
+```
+
+
+
 ## Replicasets
 ## Deployments
 ## Volume
