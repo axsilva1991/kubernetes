@@ -28,6 +28,7 @@ kubectl describe pod nginx-pod-name
 ```
 kubectl edit pod nginx-pod-name
 ```
+#### Criando Pod's de maneira declarativa:
 
 
 
