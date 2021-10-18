@@ -16,3 +16,9 @@
 ## Sc - Storage Classes 
 ## Ds - Daemonset
 ## Quota
+
+### Respostas Gerais
+###### O que é e para que serve a API do Kubernetes: 
+A api tem o proposito de integrar um terminal ou cliente como kubectl com os recursos do kubernetes.  
+###### Para que serve o kubectl:
+Serve para integrar com os recursos de API do Kubernetes.
