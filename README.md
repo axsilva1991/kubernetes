@@ -44,8 +44,6 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: primeiro-pod-declarativo
-  labels:
-    role: myrole
 spec:
   containers:
     - name: nginx-container
