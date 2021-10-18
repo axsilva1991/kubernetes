@@ -30,7 +30,7 @@ kubectl edit pod nginx-pod-name
 ```
 #### Criando Pod's de maneira declarativa:
 
-Arquivo do pod .yaml
+1 - Crie o arquivo do pod .yaml
 ````
 apiVersion: v1
 kind: Pod
@@ -44,11 +44,10 @@ spec:
       image: nginx
 ````
 
-execute o comando apply para criar o pod de forma declarativa
+2 - Execute o comando apply para criar o pod de forma declarativa
 ````
 kubectl apply -f .\primeiro-pod.yaml
 ````
-
 ## Replicasets
 ## Deployments
 ## Volume
