@@ -92,8 +92,10 @@ kubectl get pods
 Trata-se de um recurso do kubernetes que prove uma abstração que:
 * Expoe a aplicação executando um ou mais pod's
 * Prove IP's fixos para comunicação.
-* Prove um DNS para um ou mais Pods facilitando a comunicação quando os pods cairem ou precisarem ser recriados.
+* Prove um DNS estável para um ou mais Pods facilitando a comunicação quando os pods cairem ou precisarem ser recriados.
 * Pode fazer o balanceamento de carga entre os pods.
+
+Os services podem ser criados de maneira declarativa.
 
 ### Tipos de serviços:
 * ClusterIP
