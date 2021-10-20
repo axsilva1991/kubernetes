@@ -82,8 +82,22 @@ kubectl get pods
 #### Liberando portas dos container's e pods:
 
 
+## Svc - Service 
+Trata-se de uma abstração que:
+* Expoe a aplicação executando um ou mais pod's
+* Prove IP's fixos para comunicação.
+* Prove um DNS para um ou mais Pods facilitando a comunicação quando os pods cairem ou precisarem ser recriados.
+* Pode fazer o balanceamento de carga entre os pods.
 
-  
+### Tipos de serviços:
+* ClusterIP
+* NodePort
+* LoadBalancer
+
+<details>
+<summary>passo-a-passo</summary> 
+<details>
+
 ## Replicasets
 ## Deployments
 ## Volume
@@ -91,7 +105,6 @@ kubectl get pods
 ## Pv - Persistentvolume
 ## Ing - Ingress
 ## Pvc - Persistentvolumeclaim
-## Svc - Service 
 ## Sc - Storage Classes 
 ## Ds - Daemonset
 ## Quota
