@@ -104,7 +104,7 @@ Os services podem ser criados de maneira declarativa.
 
 <details>
 <summary>passo-a-passo</summary> 
-<details>
+</details>
 
 ## Replicasets
 ## Deployments
