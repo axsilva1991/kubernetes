@@ -79,9 +79,6 @@ Após isso podemos usar o comando `getpods` para verificar se o pod ainda existe
 kubectl get pods
 ````
 
-#### Liberando portas dos container's e pods:
-
-
 ## Svc - Service 
 Trata-se de um recurso do kubernetes que prove uma abstração que:
 * Expoe a aplicação executando um ou mais pod's
@@ -112,7 +109,7 @@ Trata-se de um recurso do kubernetes que prove uma abstração que:
 ### Glossário:
 ###### O que é e para que serve a API do Kubernetes: 
 A api tem o proposito de integrar um terminal ou cliente como kubectl com os recursos do kubernetes.  
-###### Para que serve o kubectl:
+###### Para que serve o `kubectl`:
 Serve para integrar com os recursos de API do Kubernetes.
 ###### Quando um pode é dado como encerrado?
 Quando todos os seus containers dentro do pod param de funcionar.
