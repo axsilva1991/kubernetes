@@ -99,8 +99,77 @@ Os services podem ser criados de maneira declarativa.
 
 ### Tipos de serviços:
 * ClusterIP
+Neste laboratorio precisamos criar 2 pods para validar o funcionamento do seviço:
+<details>
+<summary>pod-1.yaml</summary>
+
+  ````
+--- 
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: criando-cluster-ip-pod1
+spec: 
+  containers: 
+    - 
+      image: "nginx:latest"
+      name: criando-cluster-ip-pod1-container
+      ports: 
+        - 
+          containerPort: 80
+  ````
+
+</details>
+
+<details>
+<summary>pod-2.yaml</summary>
+
+  ````
+--- 
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: criando-cluster-ip-pod2
+  labels:
+    app: segundo-pod
+spec: 
+  containers: 
+    - 
+      image: "nginx:latest"
+      name: criando-cluster-ip-pod2-container
+      ports: 
+        - 
+          containerPort: 80
+  ````
+
+</details>
+
+Após a criação dos pods podemos vincular um serviço a um dos pod's, neste caso estamos viinculando ao pod2.
+
+<details>
+<summary>svc-pod2.yaml</summary>
+
+  ````
+apiVersion: v1
+kind: Service
+metadata: 
+  name: svc-pod2
+spec: 
+  type: ClusterIP
+  selector: 
+    app: segundo-pod
+  ports: 
+    - port: 80
+      targetPort: 80
+  ````
+</details>
+**`port`** = Porta exposta pelo serviço.
+**`targetPort`** = Porta que será exposta pelo pod e escutada pelo serviço.
+
+
 * NodePort
 * LoadBalancer
+
 
 <details>
 <summary>passo-a-passo</summary> 
