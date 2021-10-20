@@ -20,9 +20,16 @@
 kubectl run nginx-pod-name --image=nginx
 ```
 2 - Verificando a criação do POD
+
+**Visualização continua do status do pod**
 ```
 kubectl get pods --watch
 ```
+**Visualização detalhada:**
+  ```
+kubectl get pods -o wide
+```  
+
 3 - Verificando detalhes sobre o pod
 ```
 kubectl describe pod nginx-pod-name
