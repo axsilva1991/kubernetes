@@ -83,7 +83,7 @@ kubectl get pods
 
 
 ## Svc - Service 
-Trata-se de uma abstração que:
+Trata-se de um recurso do kubernetes que prove uma abstração que:
 * Expoe a aplicação executando um ou mais pod's
 * Prove IP's fixos para comunicação.
 * Prove um DNS para um ou mais Pods facilitando a comunicação quando os pods cairem ou precisarem ser recriados.
