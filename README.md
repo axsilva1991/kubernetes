@@ -71,6 +71,7 @@ kubectl exec -it portal-noticias -- bash
 #### Como deletar um pod:
 ````
 kubectl delete pod pod-name
+kubectl delete -f ./file-name.yaml
 ````
 Após isso podemos usar o comando `getpods` para verificar se o pod ainda existe. 
 
