@@ -56,6 +56,11 @@ kubectl apply -f .\primeiro-pod.yaml
 ````
 </details>
 
+#### Como acessar o pod via terminal?
+````
+kubectl exec -it portal-noticias -- bash
+````
+
 #### Como deletar um pod:
 ````
 kubectl delete pod pod-name
@@ -65,6 +70,10 @@ Após isso podemos usar o comando `getpods` para verificar se o pod ainda existe
 ````
 kubectl get pods
 ````
+
+#### Liberando portas dos container's e pods:
+
+
 
   
 ## Replicasets
@@ -84,3 +93,6 @@ kubectl get pods
 A api tem o proposito de integrar um terminal ou cliente como kubectl com os recursos do kubernetes.  
 ###### Para que serve o kubectl:
 Serve para integrar com os recursos de API do Kubernetes.
+###### Quando um pode é dado como encerrado?
+Quando todos os seus containers dentro do pod param de funcionar.
+
