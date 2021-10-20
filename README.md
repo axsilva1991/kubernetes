@@ -64,11 +64,19 @@ kubectl apply -f .\primeiro-pod.yaml
 </details>
 
 #### Como acessar o pod via terminal?
+<details>
+<summary>passo-a-passo</summary> 
+
 ````
 kubectl exec -it portal-noticias -- bash
 ````
+</details>
 
 #### Como deletar um pod:
+<details>
+<summary>passo-a-passo</summary> 
+
+
 ````
 kubectl delete pod pod-name
 kubectl delete -f ./file-name.yaml
@@ -78,6 +86,7 @@ Após isso podemos usar o comando `getpods` para verificar se o pod ainda existe
 ````
 kubectl get pods
 ````
+</details>
 
 ## Svc - Service 
 Trata-se de um recurso do kubernetes que prove uma abstração que:
