@@ -163,8 +163,8 @@ spec:
       targetPort: 80
   ````
 </details>
-**`port`** = Porta exposta pelo serviço.
-**`targetPort`** = Porta que será exposta pelo pod e escutada pelo serviço.
+**port** = Porta exposta pelo serviço.  
+**targetPort** = Porta que será exposta pelo pod e escutada pelo serviço.
 
 
 * NodePort
