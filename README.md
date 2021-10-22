@@ -98,7 +98,7 @@ Trata-se de um recurso do kubernetes que prove uma abstração que:
 Os services podem ser criados de maneira declarativa.
 
 ### Tipos de serviços:
-* ClusterIP
+* **ClusterIP**
 Neste laboratorio precisamos criar 2 pods para validar o funcionamento do seviço:
 <details>
 <summary>pod-1.yaml</summary>
@@ -168,8 +168,11 @@ spec:
 **targetPort** = Porta que será exposta pelo pod e escutada pelo serviço.
 
 
-* NodePort
-* LoadBalancer
+* **NodePort**
+  Tipo de serviço que permite uma comunicação com o mundo externo, e também serve como Load Balancer Automático.
+  
+  
+* **LoadBalancer**
 
 
 <details>
