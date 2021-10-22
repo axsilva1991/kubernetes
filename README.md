@@ -100,6 +100,7 @@ Os services podem ser criados de maneira declarativa.
 ### Tipos de serviços:
 * **ClusterIP**
 Neste laboratorio precisamos criar 2 pods para validar o funcionamento do seviço:
+
 <details>
 <summary>pod-1.yaml</summary>
 
@@ -169,8 +170,9 @@ spec:
 
 
 * **NodePort**  
-  Tipo de serviço que permite uma comunicação com o mundo externo, e também serve como Load Balancer Automático.
-  <details>
+  Neste tipo de serviço que permite uma comunicação com o mundo externo, e também serve como Load Balancer Automático.
+  
+<details>
 <summary>pod-1.yaml</summary>
 
   ````
@@ -190,7 +192,6 @@ spec:
         - 
           containerPort: 80
   ````
-
 </details>
 
 <details>
@@ -213,11 +214,9 @@ spec:
 </details>
   
 * **LoadBalancer**
+  Neste Serviço podemos utilizar os balanceadores de carga de cloud Providers, como: GCP, AMAZON e etc.
+  Por Ser um LoadBalancer, também são um NodePort e ClusterIP ao mesmo tempo.
 
-
-<details>
-<summary>passo-a-passo</summary> 
-</details>
 
 ## Replicasets
 ## Deployments
