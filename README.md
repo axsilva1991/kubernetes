@@ -236,7 +236,7 @@ spec:
 </details>
 
 ## CM - CONFIGMAP
-Responsável por armazenar as configurações que são necessárias para determinados recursos. Deixando a sintaxe dos recursos limpa e deixando desacoplada as configurações, visando o re-uso para os outros recursos.
+Recurso responsável por armazenar as configurações (variaveis - ENV's) que são necessárias para determinados recursos. Deixando a sintaxe dos recursos limpa e deixando desacoplada as configurações, visando o re-uso para os outros recursos.
 
 <details>
 <summary>svc-pod-1-loadbalancer.yaml</summary>
@@ -260,3 +260,5 @@ Serve para integrar com os recursos de API do Kubernetes.
 ###### Quando um pode é dado como encerrado?
 Quando todos os seus containers dentro do pod param de funcionar.
 
+## Rreferência
+https://github.com/alura-cursos/1846-kubernetes/blob/Aula6/db-configmap.yaml
