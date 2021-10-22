@@ -213,7 +213,7 @@ spec:
   ````
 </details>
   
-* **LoadBalancer**
+* **LoadBalancer**  
   Neste Serviço podemos utilizar os balanceadores de carga de cloud Providers, como: GCP, AMAZON e etc.
   Por Ser um LoadBalancer, também são um NodePort e ClusterIP ao mesmo tempo.
 
