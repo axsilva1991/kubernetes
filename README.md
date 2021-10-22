@@ -170,7 +170,47 @@ spec:
 
 * **NodePort**  
   Tipo de serviço que permite uma comunicação com o mundo externo, e também serve como Load Balancer Automático.
-  
+  <details>
+<summary>pod-1.yaml</summary>
+
+  ````
+--- 
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: criando-cluster-ip-pod1
+  labels:
+    app: primeiro-pod
+spec: 
+  containers: 
+    - 
+      image: "nginx:latest"
+      name: criando-cluster-ip-pod1-container
+      ports: 
+        - 
+          containerPort: 80
+  ````
+
+</details>
+
+<details>
+<summary>svc-pod1.yaml</summary>
+
+  ````
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-pod1
+spec:
+  type: NodePort
+  selector:
+    app: primeiro-pod
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30007
+  ````
+</details>
   
 * **LoadBalancer**
 
