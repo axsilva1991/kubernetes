@@ -168,7 +168,7 @@ spec:
 **targetPort** = Porta que será exposta pelo pod e escutada pelo serviço.
 
 
-* **NodePort**
+* **NodePort**  
   Tipo de serviço que permite uma comunicação com o mundo externo, e também serve como Load Balancer Automático.
   
   
