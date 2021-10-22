@@ -234,8 +234,12 @@ spec:
     app: portal-noticias-pod
   ````
 </details>
-  
 
+## CM - CONFIGMAP
+Responsável por armazenar as configurações que são necessárias para determinados recursos. Deixando a sintaxe dos recursos limpa e deixando desacoplada as configurações, visando o re-uso para os outros recursos.
+
+<details>
+<summary>svc-pod-1-loadbalancer.yaml</summary>
 ## Replicasets
 ## Deployments
 ## Volume
@@ -246,6 +250,7 @@ spec:
 ## Sc - Storage Classes 
 ## Ds - Daemonset
 ## Quota
+</details>
 
 ### Glossário:
 ###### O que é e para que serve a API do Kubernetes: 
