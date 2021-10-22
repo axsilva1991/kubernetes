@@ -248,11 +248,13 @@ kind: ConfigMap
 metadata:
   name: db-configmap
 data:
-  MYSQL_ROOT_PASSWORD: senha123
+  MYSQL_ROOT_PASSWORD: q1w2e3r4
   MYSQL_DATABASE: empresa
-  MYSQL_PASSWORD: senha123
+  MYSQL_PASSWORD: q1w2e3r4
   ````
-</details>
+</details>  
+
+
 
 <details>
 <summary>Próximos Recursos</summary>
