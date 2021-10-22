@@ -238,8 +238,24 @@ spec:
 ## CM - CONFIGMAP
 Recurso responsável por armazenar as configurações (variaveis - ENV's) que são necessárias para determinados recursos. Deixando a sintaxe dos recursos limpa e deixando desacoplada as configurações, visando o re-uso para os outros recursos.
 
+
 <details>
-<summary>svc-pod-1-loadbalancer.yaml</summary>
+<summary>db-configmap.yaml</summary>
+
+  ````
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-configmap
+data:
+  MYSQL_ROOT_PASSWORD: senha123
+  MYSQL_DATABASE: empresa
+  MYSQL_PASSWORD: senha123
+  ````
+</details>
+
+<details>
+<summary>Próximos Recursos</summary>
 ## Replicasets
 ## Deployments
 ## Volume
