@@ -217,6 +217,24 @@ spec:
   Neste Serviço podemos utilizar os balanceadores de carga de cloud Providers, como: GCP, AMAZON e etc.
   Por Ser um LoadBalancer, também são um NodePort e ClusterIP ao mesmo tempo.
 
+<details>
+<summary>svc-pod-1-loadbalancer.yaml</summary>
+
+  ````
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-pod-loadbalancer-1
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      nodePort: 30000
+  selector:
+    app: portal-noticias-pod
+  ````
+</details>
+  
 
 ## Replicasets
 ## Deployments
