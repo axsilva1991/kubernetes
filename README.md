@@ -278,7 +278,13 @@ spec:
       - name: my-container
         image: nginx
   ````
+
 </details>
+
+  ````
+  $kubectl create -f replicaset-exemple.yaml
+  ````
+
 <details>
 <summary>Próximos Recursos</summary>
 ## Deployments
