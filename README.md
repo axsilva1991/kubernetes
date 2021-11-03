@@ -254,11 +254,11 @@ data:
   ````
 </details>  
 
-
+## Replicasets
+Trata-se de um recurso do kubernetes responsável por manter uma determinada quantidade de pods ativos caso por algum motivo seja ele de falha ou qualquer outro motivo que possa causar uma interrupção do POD.  
 
 <details>
 <summary>Próximos Recursos</summary>
-## Replicasets
 ## Deployments
 ## Volume
 ## Hpa - Horizontal Pod Autoscaler
