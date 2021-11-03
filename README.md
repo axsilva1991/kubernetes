@@ -256,7 +256,29 @@ data:
 
 ## Replicasets
 Trata-se de um recurso do kubernetes responsável por manter uma determinada quantidade de pods ativos caso por algum motivo seja ele de falha ou qualquer outro motivo que possa causar uma interrupção do POD.  
-
+<details>
+<summary>replicaset-exemple.yaml</summary>
+  
+  ````
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-replicaset
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-container
+        image: nginx
+  ````
+</details>
 <details>
 <summary>Próximos Recursos</summary>
 ## Deployments
@@ -279,4 +301,5 @@ Serve para integrar com os recursos de API do Kubernetes.
 Quando todos os seus containers dentro do pod param de funcionar.
 
 ## Rreferência
-https://github.com/alura-cursos/1846-kubernetes/blob/Aula6/db-configmap.yaml
+https://github.com/alura-cursos/1846-kubernetes/blob/Aula6/db-configmap.yaml  
+https://www.kubermatic.com/blog/introduction-to-kubernetes-replicasets/
