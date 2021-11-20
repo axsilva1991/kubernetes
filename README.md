@@ -288,8 +288,8 @@ spec:
 Recurso do kubernetes responsável por guardar dados em disco
 
 ## Pvc - Persistentvolumeclaim
-Recurso do kubernetes responsável por acessar o persistence volume com o pod.
-
+Recurso do kubernetes responsável por acessar o persistence volume com o pod.  
+É necessário um PersistentVolumeClaim para acessar um PersistentVolume.
 <details>
 <summary>Próximos Recursos</summary>
 ## Deployments
