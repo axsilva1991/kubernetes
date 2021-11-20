@@ -284,15 +284,18 @@ spec:
   ````
   $kubectl create -f replicaset-exemple.yaml
   ````
+## Pv - Persistentvolume
+Recurso do kubernetes responsável por guardar dados em disco
+
+## Pvc - Persistentvolumeclaim
+Recurso do kubernetes responsável por acessar o persistence volume com o pod.
 
 <details>
 <summary>Próximos Recursos</summary>
 ## Deployments
 ## Volume
 ## Hpa - Horizontal Pod Autoscaler
-## Pv - Persistentvolume
 ## Ing - Ingress
-## Pvc - Persistentvolumeclaim
 ## Sc - Storage Classes 
 ## Ds - Daemonset
 ## Quota
