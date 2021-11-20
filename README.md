@@ -312,3 +312,4 @@ Quando todos os seus containers dentro do pod param de funcionar.
 ## Rreferência
 https://github.com/alura-cursos/1846-kubernetes/blob/Aula6/db-configmap.yaml  
 https://www.kubermatic.com/blog/introduction-to-kubernetes-replicasets/
+https://kubernetes.io/docs/concepts/storage/persistent-volumes/
