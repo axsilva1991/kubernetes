@@ -314,3 +314,4 @@ https://github.com/alura-cursos/1846-kubernetes/blob/Aula6/db-configmap.yaml
 https://github.com/alura-cursos/kubernetes-parte2/tree/Aula2  
 https://www.kubermatic.com/blog/introduction-to-kubernetes-replicasets/  
 https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+https://github.com/alura-cursos/kubernetes-parte2/archive/Aula4.zip
